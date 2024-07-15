@@ -7,4 +7,10 @@ pipeline {
             }
         }
     }
+        stages {
+        stage('Cloning Git Respository') {
+            steps {
+                git branch: 'main', url: 'https://github.com/zitodepina/jk-public-gh1.git'
+            }
+        }
 }
