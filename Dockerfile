@@ -13,7 +13,7 @@ RUN apt-get update && \
 WORKDIR /var/www/html
 
 # Clona el repositorio (puedes ajustar la URL según tu repositorio)
-RUN git clone https://github.com/zitodepina/jk-public-gh1.git .
+RUN git clone https://github.com/carlggzgl/crud.git .
 
 # Instala las dependencias de PHP usando Composer si es necesario
 # RUN composer install
