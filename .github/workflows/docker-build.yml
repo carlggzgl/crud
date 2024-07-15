@@ -1,0 +1,19 @@
+name: Build Docker Image
+
+on:
+  push:
+    branches:
+      - main  # Ajusta según la rama que deseas monitorear para cambios
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build Docker image
+        run: docker build -t my-docker-image:latest .
+
+      # Puedes añadir pasos adicionales como push a un registry, pruebas, etc.
